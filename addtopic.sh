@@ -39,10 +39,10 @@ echo "filter {
 
 output {
   elasticsearch {
-    user => elastic
-    password => hhh123
+    user => test
+    password => test
     action => \"index\"
-    hosts  => \"192.168.244.146:9200\"
+    hosts  => \"192.168.1.1:9200\"
     index  => \"%{type}-%{+YYYY.MM.dd}\"
   }
 
