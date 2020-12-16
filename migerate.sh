@@ -16,5 +16,7 @@ else
 	rsync -avz --delete $i $1:$file
 	done
 fi
+rsync -avz --delete /var/spool/cron/root  $1:/var/spool/cron/
+rsync -avz --delete /usr/local/nginx/conf $1:/usr/local/openresty/nginx/
 
 
