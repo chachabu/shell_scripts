@@ -1,5 +1,4 @@
 #/bin/bash
-export RSYNC_PASSWORD=Zhendao_2020Dao
 source /etc/profile
 yum -y install rsync
 
@@ -18,5 +17,5 @@ else
 fi
 rsync -avz --delete /var/spool/cron/root  $1:/var/spool/cron/
 rsync -avz --delete /usr/local/nginx/conf $1:/usr/local/openresty/nginx/
-
-
+rsync -avz --delete /etc/rc.local  $1:/etc/
+rsync -avz --delete /data  $1:/
