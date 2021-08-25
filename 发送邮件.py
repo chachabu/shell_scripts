@@ -6,10 +6,10 @@ from email.utils import formataddr
 
 msg=MIMEMultipart('related')
 email_from_name=''
-from_addr='haihua.huang@71360.com'
-password='NEFBzj2WGSwaBot7'
-to_addr=['952520296@qq.com'] #收件邮箱(多个之间用逗号隔开)
-cc_addr=['maigao.liu@71360.com']  #抄送邮箱(多个之间用逗号隔开)
+from_addr='haixxm'
+password='NEFBxxxBot7'
+to_addr=['9xx'] #收件邮箱(多个之间用逗号隔开)
+cc_addr=['xxcom']  #抄送邮箱(多个之间用逗号隔开)
 smtp_server = 'smtp.exmail.qq.com'
 if cc_addr:
     receiver_addr=to_addr+cc_addr
